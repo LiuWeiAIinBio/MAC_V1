@@ -9,7 +9,7 @@
 
 	git clone https://github.com/LiuWeiAIinBio/MAC_V1.git
 
-打开上述下载文件夹，通过终端命令行进入该文件夹：`cd ./MAC_V1`
+打开上面下载的文件夹，通过终端命令行进入该文件夹：`cd ./MAC_V1`
 
 <br/>
 
