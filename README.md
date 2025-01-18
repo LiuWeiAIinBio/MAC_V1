@@ -21,7 +21,7 @@
 
 举例：
 
-	python predict.py --path_AAfasta_seq D:\Desktop\MAC_V1\data\acrA_mcrA_AA.txt --path_label_file D:\Desktop\MAC_V1\data\acrA_mcrA_label.txt
+	python predict.py --path_AAfasta_seq D:\Desktop\MAC_V1\data\acrA_mcrA_AA_sample.txt --path_label_file D:\Desktop\MAC_V1\data\acrA_mcrA_label_sample.txt
 
 <br/>
 
