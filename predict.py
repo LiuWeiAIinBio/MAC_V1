@@ -11,7 +11,6 @@ def predict(path_AAfasta_seq, path_label_file):
     state_dict_load = torch.load("./model_state_dict.pkl")
     net.load_state_dict(state_dict_load)
 
-
     # 推断
     sample_data = MACDataset(path_AAfasta_seq, path_label_file)
     sample_loader = DataLoader(dataset=sample_data, batch_size=1, shuffle=False)
