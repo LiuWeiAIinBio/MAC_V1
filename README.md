@@ -53,6 +53,7 @@
 	FNFAEPRREFGRGAMREFMPAGERSLVIPAK*
 	
 氨基酸序列对应的标签需要处理为 0-1 格式，MCR 为 0，ACR 为 1，例如：
+
 	0
 	1
 	0
