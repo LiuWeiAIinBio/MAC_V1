@@ -7,21 +7,21 @@
 ## 使用
 **1. 下载项目到本地**
 
-`git clone https://github.com/LiuWeiAIinBio/MAC_V1.git`
+	git clone https://github.com/LiuWeiAIinBio/MAC_V1.git
 
-打开上述下载文件夹，通过终端命令行进入该文件夹：`cd ./MAC_V1`
+打开上面下载的文件夹，通过终端命令行进入该文件夹：`cd ./MAC_V1`
 
 <br/>
 
 **2. 预测样本**
 
-注意：需要相应的具备 python 环境
+注意：电脑需要具备相应的 python 环境
 
-`python predict.py --path_AAfasta_seq = 氨基酸序列文件路径 --path_label_file = 氨基酸序列对应的标签文件的地址`
+	python predict.py --path_AAfasta_seq 氨基酸序列文件路径 --path_label_file 氨基酸序列对应的标签文件的地址
 
 举例：
 
-`python predict.py --path_AAfasta_seq = ./data/acrA_mcrA_label_3.txt path_label_file = ./data/acrA_mcrA_label_3.txt`
+	python predict.py --path_AAfasta_seq D:\Desktop\MAC_V1\data\acrA_mcrA_AA.txt --path_label_file D:\Desktop\MAC_V1\data\acrA_mcrA_label.txt
 
 <br/>
 
@@ -53,6 +53,7 @@
 	FNFAEPRREFGRGAMREFMPAGERSLVIPAK*
 	
 氨基酸序列对应的标签需要处理为 0-1 格式，MCR 为 0，ACR 为 1，例如：
+
 	0
 	1
 	0
