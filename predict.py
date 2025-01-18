@@ -16,17 +16,8 @@ def predict(path_AAfasta_seq, path_label_file):
     sample_data = MACDataset(path_AAfasta_seq, path_label_file)
     sample_loader = DataLoader(dataset=sample_data, batch_size=1, shuffle=False)
 
-    total = 0
-    correct = 0
-
     for i, data in enumerate(sample_loader):
         inputs, labels = data
-        total += labels.shape[0]
-
-        if int(labels.item()) == 0:
-            labels = "MCR"
-        else:
-            labels = "ACR"
 
         net.eval()
         outputs = net(inputs)
@@ -37,13 +28,7 @@ def predict(path_AAfasta_seq, path_label_file):
         else:
             outputs = "ACR"
 
-        predict = "True" if outputs == labels else "False"
-
-        print(f"第 {i} 个样本为：{labels}, predict 为 {outputs}, 预测 {predict}")
-        correct += 1 if outputs == labels else 0
-
-    accuracy = correct / total
-    print(f"对全部样本的预测准确率为：{accuracy}")
+        print(f"第 {i} 个样本为预测为 {outputs}")
 
 
 if __name__ == "__main__":
