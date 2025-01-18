@@ -19,7 +19,7 @@
 
 	python predict.py --path_AAfasta_seq 氨基酸序列文件路径 --path_label_file 氨基酸序列对应的标签文件的地址
 
-举例：
+示例：
 
 	python predict.py --path_AAfasta_seq D:\Desktop\MAC_V1\data\acrA_mcrA_AA_sample.txt --path_label_file D:\Desktop\MAC_V1\data\acrA_mcrA_label_sample.txt
 
