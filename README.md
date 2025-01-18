@@ -15,7 +15,7 @@
 
 **2. 预测样本**
 
-注意：需要相应的具备 python 环境
+注意：电脑需要具备相应的 python 环境
 
 	python predict.py --path_AAfasta_seq = 氨基酸序列文件路径 --path_label_file = 氨基酸序列对应的标签文件的地址
 
