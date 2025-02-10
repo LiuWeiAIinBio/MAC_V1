@@ -1,10 +1,17 @@
 # MAC_V1: a classifier of close genes between MCR and ACR
 
-## 项目描述
+## Project Description
 在对氨基酸序列进行基因类型注释时，存在一些无法通过 blastp 区分开的相似基因，这些基因功能相近但不同，我们有必要将其区分，在过去我们往往依靠建立系统发育树将其区分开，但是这种方法耗时耗力。MCR 和 ACR 就是一对儿功能相近的不同基因，前者催化甲烷生成过程，后者催化中长链烷烃降解过程，本项目可以很简单、很快速、很好地区分这两种基因。本项目使用了 Lenet 作为神经网络框架，使用 blosum62 矩阵对氨基酸序列进行 embedding。模型在训练集和验证集上都表现出了极其优异的性能，预测准确率都接近于 1。这给传统的依靠 blast 计算序列相似性的基因注释软件提供了启示，或许 ”blast + 神经网络“ 模式能大幅度提高注释软件的性能。
 
 
-## 使用
+## Environment Requirement
+The code has been tested running under Python 3.9. The required package are as follows:
+- torch == 2.5.1
+- pandas == 2.1.4
+- numpy == 1.26.0
+
+
+## Usage Guide
 **1. 下载项目到本地**
 
 	git clone https://github.com/LiuWeiAIinBio/MAC_V1.git
