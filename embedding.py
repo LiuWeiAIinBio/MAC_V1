@@ -70,10 +70,10 @@ def creat_blosumMat(blosum_list, columns, index):
 
 def data2blosumMat(data, blosumMat):
     """
-    将 data 中的氨基酸序列编码为对应的 blosum 数据，并转为 tensor 格式；以及将 label 数据转为 tensor 格式
+    将 data 中的氨基酸序列编码为对应的 blosum 数据
     :param data: 包含了氨基酸序列和对应的 label 的 dataframe
     :param blosumMat: blosum 矩阵
-    :return: 四维的 features（batchs * channels * 长 * 宽），二维的 labels（batchs * 1），数据类型为 torch.float32
+    :return: 四维的 features（batchs * channels * 长 * 宽），二维的 labels（batchs * 1）
     """
     features = []
     labels = []
